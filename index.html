@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <title>Ben Platt Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-sale=1.0, width=device-width">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Just+Another+Hand&display=swap" rel="stylesheet">
+  </head>
+
+  <style>
+    body {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    #nav {
+      background-color: transparent;
+      width: 100%;
+      height: 2.75em;
+      left: 0;
+      top: 0;
+      position: fixed;
+      z-index: 999;
+      font-family: "Just Another Hand", cursive;
+    }
+
+    ul {
+      text-align: right;
+      margin: 0.75em 0em;
+    }
+
+    li {
+      list-style: none;
+      display: inline;
+      padding: .75em;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #EED2FF;
+    }
+
+    h1 {
+      color: white;
+      font-size: 2em;
+      position: absolute;
+      top: 1em;
+      left: 3%;
+    }
+
+    h3 {
+      color: white;
+      font-size: 1em;
+      font-weight: 500;
+      position: absolute;
+      top: 4.5em;
+      left: 3%;
+    }
+    
+    #date {
+      top: 5.75em;
+    }
+
+    #logo {
+      position: absolute;
+      top: 0;
+      margin: 0.75em 0em;
+      color: #DA9AFF;
+      padding-left: 0.75em;
+    }
+
+    #landing {
+      width: 100%;
+      position: relative;
+      background-image: url("ben.jpg");
+      background-color: black;
+      aspect-ratio: 3/2;
+      background-size: cover;
+    }
+
+    #description {
+      width: 100%;
+      position: relative;
+      text-align: center;
+      color: black;
+      font-size: 0.75em;
+      display: inline;
+    }
+
+    #description p {
+      padding: 3% 5%;
+      padding-bottom: 0;
+    }
+    
+    #description a {
+      padding: 3% 5%;
+      padding-bottom: 0;
+      color: black;
+    }
+    
+    #description a:hover {
+      color: #DA9AFF;
+    }
+
+    #images {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 3%;
+    }
+
+    #column {
+      flex: 25%;
+      max-width: 23%;
+      padding: 1%;
+    }
+
+    #column img {
+      margin-top: 7%;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Responsive Design Additions */
+    @media screen and (max-width: 600px) {
+      body {
+        width: 100%;
+      }
+      
+      h1 {
+      font-size: 1.5em;
+      position: absolute;
+      top: 1.5em;
+      left: 3%;
+    }
+
+    h3 {
+      font-size: 0.75em;
+      position: absolute;
+      top: 7.5em;
+      left: 3%;
+    }
+      
+      #date {
+        top: 8.75em;
+      }
+      
+      #column {
+        flex: 100%;
+        max-width: 95%;
+        padding: 3%;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      body {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <body>
+    <div id="nav">
+      <p id="logo">Paige's Photoshoots</p>
+      <ul>
+        <li><a href="https://paige-gug.github.io/Photoshoots/">Home</a></li>
+        <li><a href="https://paige-gug.github.io/OTM/">Galleries</a></li>
+        <li><a href="/">About</a></li>
+      </ul>
+    </div>
+
+    <div id="landing">
+      <h1>Ben Platt</h1>
+      <h3>Massey Hall</h3>
+      <h3 id="date">June 25, 2024</h3>
+    </div>
+
+    <div id="description">
+      <p>These photos feature singer Ben Platt performing for a sold-out Toronto audience at Massey Hall. With changing lighting conditions, a dancing audience, and only my phone, this album demonstrates my adaptability and proficiency in Adobe Lightroom.</p>
+    </div>
+
+    <div id="images">
+      <div id="column">
+        <img src="ben1.jpg" alt="Ben Platt holding a microphone up to his face">
+        <img src="ben2.jpg" alt="Ben Platt sitting on a chair singing">
+      </div>
+      <div id="column">
+        <img src="ben3.jpg" alt="Ben Platt staring at the ceiling with his hands up">
+        <img src="ben4.jpg" alt="Ben Platt staring at the crowd with his arm up to wave">
+      </div>
+      <div id="column">
+        <img src="ben5.jpg" alt="Ben Platt singing on stage with blue and yellow light beams">
+        <img src="ben6.jpg" alt="Ben Platt sitting on a chair singing with red lighting">
+      </div>
+      <div id="column">
+        <img src="ben7.jpg" alt="Ben Platt standing on a stage singing wearing a fluffy robe">
+        <img src="ben8.jpg" alt="Ben Platt standing on a stage singing with blue lighting">
+      </div>
+    </div>
+    <div id="description"><a href="#">Next Gallery ></a></div>
+  </body>
+</html>
